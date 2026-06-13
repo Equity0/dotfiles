@@ -52,7 +52,7 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako \
 
 | 包名 | 说明 |
 |------|------|
-| chromium | 浏览器 (Mod+Shift+R 启动) |
+| chromium | 浏览器 (Mod+Shift+Enter 启动) |
 | gaur | TUI 包管理器 |
 
 ## 🚀 安装使用
@@ -110,6 +110,7 @@ niri 配置了每 10 分钟自动更换背景图片，图片需存放在：
 | `Mod + W` | 关闭窗口 |
 | `Mod + F` | 最大化窗口 |
 | `Mod + H/J/K/L` | 焦点移动 |
+| `Mod + Shift + Enter` | 打开浏览器 (Chromium) |
 | `Mod + Shift + H/J/K/L` | 移动窗口 |
 | `Mod + 1-9` | 切换工作区 |
 | `Mod + Shift + 1-9` | 移动到工作区 |

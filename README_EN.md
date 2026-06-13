@@ -52,7 +52,7 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako \
 
 | Package | Description |
 |---------|-------------|
-| chromium | Web browser (Mod+Shift+R to launch) |
+| chromium | Web browser (Mod+Shift+Enter to launch) |
 | gaur | TUI package manager |
 
 ## 🚀 Installation
@@ -110,6 +110,7 @@ niri is configured to change wallpaper every 10 minutes. Place your images in:
 | `Mod + W` | Close window |
 | `Mod + F` | Maximize window |
 | `Mod + H/J/K/L` | Focus movement |
+| `Mod + Shift + Enter` | Open browser (Chromium) |
 | `Mod + Shift + H/J/K/L` | Move window |
 | `Mod + 1-9` | Switch workspace |
 | `Mod + Shift + 1-9` | Move to workspace |
