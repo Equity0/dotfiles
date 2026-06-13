@@ -86,9 +86,16 @@ dotfiles checkout -f
 
 ```bash
 dotfiles status                    # Check status
-dotfiles add .config/xxx           # Add new config
+dotfiles add .config/xxx           # Add specific file
+dotfiles add -u                    # Add all modified files (not new files)
 dotfiles commit -m "description"   # Commit changes
 dotfiles push                      # Push to GitHub
+```
+
+**Commit all changes at once:**
+
+```bash
+dotfiles add -u && dotfiles commit -m "description" && dotfiles push
 ```
 
 ## 🖼️ Wallpaper Setup

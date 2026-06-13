@@ -86,9 +86,16 @@ dotfiles checkout -f
 
 ```bash
 dotfiles status                    # 查看状态
-dotfiles add .config/xxx           # 添加新配置
+dotfiles add .config/xxx           # 添加指定文件
+dotfiles add -u                    # 添加所有已修改的文件（不包含新文件）
 dotfiles commit -m "更新说明"       # 提交更改
 dotfiles push                      # 推送到 GitHub
+```
+
+**一键提交所有修改：**
+
+```bash
+dotfiles add -u && dotfiles commit -m "更新说明" && dotfiles push
 ```
 
 ## 🖼️ 壁纸设置
