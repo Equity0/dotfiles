@@ -108,22 +108,111 @@ niri 配置了每 10 分钟自动更换背景图片，图片需存放在：
 
 ## ⌨️ 快捷键
 
+### 基本操作
+
 | 快捷键 | 功能 |
 |--------|------|
 | `Mod + Enter` | 打开终端 (Alacritty) |
+| `Mod + Shift + Enter` | 打开浏览器 (Chromium) |
 | `Mod + Space` | 应用启动器 (Fuzzel) |
 | `Mod + Escape` | 系统菜单 |
 | `Super + Alt + L` | 锁定屏幕 |
+| `Super + E` | 打开文件管理器 |
 | `Mod + W` | 关闭窗口 |
-| `Mod + F` | 最大化窗口 |
-| `Mod + H/J/K/L` | 焦点移动 |
-| `Mod + Shift + Enter` | 打开浏览器 (Chromium) |
-| `Mod + Shift + H/J/K/L` | 移动窗口 |
-| `Mod + 1-9` | 切换工作区 |
-| `Mod + Shift + 1-9` | 移动到工作区 |
-| `Mod + R` | 切换窗口宽度 |
+| `Mod + Shift + E` | 退出 niri |
+| `Ctrl + Alt + Delete` | 退出 niri |
+
+### 窗口管理
+
+| 快捷键 | 功能 |
+|--------|------|
+| `Mod + H/J/K/L` | 焦点左/下/上/右 |
+| `Mod + Shift + H/J/K/L` | 移动窗口左/下/上/右 |
+| `Mod + Left/Right` | 调整列宽 -5%/+5% |
+| `Mod + Up/Down` | 调整窗口高度 -5%/+5% |
+| `Mod + Minus/Equal` | 调整列宽 -10%/+10% |
+| `Mod + Shift + Minus/Equal` | 调整窗口高度 -10%/+10% |
+| `Mod + R` | 切换预设宽度 |
+| `Mod + Shift + R` | 反向切换预设宽度 |
+| `Mod + Ctrl + R` | 重置窗口高度 |
+| `Mod + Ctrl + Shift + R` | 切换预设高度 |
+| `Mod + F` | 最大化列 |
+| `Mod + Shift + F` | 全屏窗口 |
+| `Mod + M` | 最大化到边缘 |
+| `Mod + Ctrl + F` | 扩展到可用宽度 |
+| `Mod + C` | 居中列 |
+| `Mod + Ctrl + C` | 居中所有可见列 |
 | `Mod + V` | 切换浮动 |
-| `Mod + O` | 概览视图 |
+| `Mod + Shift + V` | 在浮动和平铺间切换焦点 |
+
+### 工作区
+
+| 快捷键 | 功能 |
+|--------|------|
+| `Mod + 1-9` | 切换到工作区 1-9 |
+| `Mod + Shift + 1-9` | 移动窗口到工作区 1-9 |
+| `Mod + U/I` | 切换到上/下个工作区 |
+| `Mod + Shift + U/I` | 移动列到上/下个工作区 |
+| `Mod + Ctrl + U/I` | 移动工作区上/下 |
+| `Mod + Home/End` | 跳到第一个/最后一个列 |
+| `Mod + Shift + Home/End` | 移动列到第一个/最后 |
+
+### 显示器
+
+| 快捷键 | 功能 |
+|--------|------|
+| `Mod + Ctrl + H/J/K/L` | 焦点左/下/上/右显示器 |
+| `Mod + Shift + Ctrl + H/J/K/L` | 移动列到左/下/上/右显示器 |
+| `Mod + Shift + Ctrl + Left/Right` | 移动工作区到左/右显示器 |
+| `Mod + Shift + Ctrl + Up/Down` | 移动工作区到上/下显示器 |
+| `Mod + Shift + P` | 关闭显示器 |
+
+### 窗口组合
+
+| 快捷键 | 功能 |
+|--------|------|
+| `Mod + [` | 向左合并/弹出窗口 |
+| `Mod + ]` | 向右合并/弹出窗口 |
+| `Mod + ,` | 合并窗口到列 |
+| `Mod + .` | 从列弹出窗口 |
+
+### 概览与 Scratchpad
+
+| 快捷键 | 功能 |
+|--------|------|
+| `Mod + O` | 切换概览视图 |
+| `Mod + S` | 显示所有 scratchpad |
+| `Mod + Shift + S` | 切换 scratchpad |
+
+### 截图
+
+| 快捷键 | 功能 |
+|--------|------|
+| `Print` | 截图 |
+| `Ctrl + Print` | 截取整个屏幕 |
+| `Alt + Print` | 截取当前窗口 |
+
+### 多媒体
+
+| 快捷键 | 功能 |
+|--------|------|
+| `XF86AudioRaiseVolume` | 增加音量 |
+| `XF86AudioLowerVolume` | 降低音量 |
+| `XF86AudioMute` | 静音 |
+| `XF86AudioMicMute` | 麦克风静音 |
+| `XF86AudioPlay` | 播放/暂停 |
+| `XF86AudioStop` | 停止 |
+| `XF86AudioPrev` | 上一曲 |
+| `XF86AudioNext` | 下一曲 |
+| `XF86MonBrightnessUp` | 增加亮度 |
+| `XF86MonBrightnessDown` | 降低亮度 |
+
+### 其他
+
+| 快捷键 | 功能 |
+|--------|------|
+| `Mod + Shift + /` | 显示快捷键帮助 |
+| `Mod + Shift + Escape` | 切换快捷键抑制 |
 
 ## 🎨 主题
 
