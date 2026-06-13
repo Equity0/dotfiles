@@ -759,15 +759,15 @@ binds {
     // 如果窗口是独立的，会将其合并到旁边的列
     // If the window is already in a column, they will expel it out.
     // 如果窗口已在列中，会将其弹出
-    Mod+BracketLeft  { consume-or-expel-window-left; }
-    Mod+BracketRight { consume-or-expel-window-right; }
+    Mod+BracketLeft hotkey-overlay-title="将聚焦窗口移到左边的列" { consume-or-expel-window-left; }
+    Mod+BracketRight hotkey-overlay-title="将聚焦窗口移到右边的列" { consume-or-expel-window-right; }
 
     // Consume one window from the right to the bottom of the focused column.
     // 从右侧消费一个窗口到聚焦列的底部
-    Mod+Comma  { consume-window-into-column; }
+    Mod+Comma hotkey-overlay-title="将右侧窗口挪到聚焦列的最下方" { consume-window-into-column; }
     // Expel the bottom window from the focused column to the right.
     // 将聚焦列底部的窗口弹出到右侧
-    Mod+Period { expel-window-from-column; }
+    Mod+Period hotkey-overlay-title="将聚焦列最下方窗口挪到右侧" { expel-window-from-column; }
 
     // Cycle through widths set in preset-column-widths.
     // 循环切换 preset-column-widths 中设置的宽度
@@ -849,9 +849,9 @@ binds {
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
     
-    Mod+Home { screenshot; }
-    Mod+Ctrl+Home { screenshot-screen; }
-    Mod+Alt+Home { screenshot-window; }
+    Mod+Home hotkey-overlay-title="Take a Screenshot" { screenshot; }
+    Mod+Ctrl+Home hotkey-overlay-title="Take a Screenshot For Screen" { screenshot-screen; }
+    Mod+Alt+Home hotkey-overlay-title="Take a Screenshot For FoucsWindow" { screenshot-window; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
@@ -880,9 +880,9 @@ binds {
 
     // System Menu with fuzzel
     // 系统菜单（使用 fuzzel）
-    Mod+Escape { spawn "~/.config/niri/scripts/system_menu.sh"; }
+    Mod+Escape hotkey-overlay-title="Open System Menu" { spawn "~/.config/niri/scripts/system_menu.sh"; }
 
     // scratchpad
-    Mod+S { spawn "nirius" "scratchpad-show-all"; }
-    Mod+Shift+S { spawn "nirius" "scratchpad-toggle"; }
+    Mod+S hotkey-overlay-title="show Scratchpad"  { spawn "nirius" "scratchpad-show-all"; }
+    Mod+Shift+S  hotkey-overlay-title="Move Window to Scratchpad" { spawn "nirius" "scratchpad-toggle"; }
 }
