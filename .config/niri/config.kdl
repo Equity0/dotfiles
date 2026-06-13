@@ -383,7 +383,7 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 // 此行启动 waybar，一个常用的 Wayland 状态栏
 spawn-at-startup "waybar"
-spawn-sh-at-startup "bash -c ~/.config/scripts/rand-bg.sh"
+spawn-sh-at-startup "bash -c ~/.config/niri/scripts/rand-bg.sh"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "niriusd"
 
@@ -613,13 +613,15 @@ binds {
     // Mod+K     { focus-window-or-workspace-up; }
     // Mod+Ctrl+J     { move-window-down-or-to-workspace-down; }
     // Mod+Ctrl+K     { move-window-up-or-to-workspace-up; }
+    
+    // 切换到首个或末尾的窗口
+    //Mod+Home { focus-column-first; }
+    //Mod+End  { focus-column-last; }
+    // 移动窗口使其成为首个或末尾的窗口
+    //Mod+Shift+Home { move-column-to-first; }
+    //Mod+Shift+End  { move-column-to-last; }
 
-    Mod+Home { focus-column-first; }
-    Mod+End  { focus-column-last; }
-    Mod+Shift+Home { move-column-to-first; }
-    Mod+Shift+End  { move-column-to-last; }
-
-    // 切换注视的显示器
+    // 切换焦点的显示器
     //Mod+Ctrl+Left  { focus-monitor-left; }
     //Mod+Ctrl+Down  { focus-monitor-down; }
     //Mod+Ctrl+Up    { focus-monitor-up; }
@@ -846,6 +848,10 @@ binds {
     Print { screenshot; }
     Ctrl+Print { screenshot-screen; }
     Alt+Print { screenshot-window; }
+    
+    Mod+Home { screenshot; }
+    Mod+Ctrl+Home { screenshot-screen; }
+    Mod+Alt+Home { screenshot-window; }
 
     // Applications such as remote-desktop clients and software KVM switches may
     // request that niri stops processing the keyboard shortcuts defined here
