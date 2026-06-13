@@ -1,0 +1,25 @@
+[main]
+font = JetBrains Mono:size=12
+prompt = "❯ "
+width = 30
+horizontal-pad = 30
+vertical-pad = 30
+inner-pad = 5
+line-height = 25
+letter-spacing = 0.5
+icons-enabled = no
+
+[colors]
+background = "#eff1f5fc"
+text = "#4c4f69fc"
+prompt = "#81a1c1fc"
+input = "#4c4f69fc"
+match = "#ee99a0fc"
+selection = "#7287fdfc"
+selection-text = "#4c4f69fc"
+selection-match = "#4c4f69fc"
+border = "#7287fdfc"
+
+[border]
+width = 2
+radius = 0
