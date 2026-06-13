@@ -4,6 +4,7 @@
 
 - alacritty
 - fuzzel
+- mako
 - waybar
 - swaylock
 - niri
