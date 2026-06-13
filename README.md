@@ -182,7 +182,7 @@ niri 配置了每 10 分钟自动更换背景图片，图片需存放在：
 |--------|------|
 | `Mod + O` | 切换概览视图 |
 | `Mod + S` | 显示所有 scratchpad |
-| `Mod + Shift + S` | 切换 scratchpad |
+| `Mod + Shift + S` | 移动窗口到 scratchpad |
 
 ### 截图
 

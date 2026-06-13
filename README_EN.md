@@ -182,7 +182,7 @@ niri is configured to change wallpaper every 10 minutes. Place your images in:
 |----------|--------|
 | `Mod + O` | Toggle overview |
 | `Mod + S` | Show all scratchpads |
-| `Mod + Shift + S` | Toggle scratchpad |
+| `Mod + Shift + S` | Move window to scratchpad |
 
 ### Screenshot
 
