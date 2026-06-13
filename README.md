@@ -23,6 +23,10 @@ dotfiles checkout
 dotfiles checkout -f
 ```
 
+## 注意事项
+
+niri 会每十分钟随机更换背景图片，图片需存放在 `~/Pictures/Wallpapers` 目录中。
+
 ## 使用
 
 ```bash
