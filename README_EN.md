@@ -24,7 +24,7 @@ English | [中文](./README.md)
 ### Arch Linux
 
 ```bash
-sudo pacman -S niri alacritty fuzzel waybar swaylock mako \
+sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
     wireplumber brightnessctl playerctl libnotify glib2 \
     pavucontrol blueman network-manager-applet btop nautilus \
     ttf-jetbrains-mono-nerd polkit-gnome
@@ -34,6 +34,13 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako \
 
 | Category | Package | Purpose |
 |----------|---------|---------|
+| **Compositor** | niri | Wayland tiling compositor |
+| **Terminal** | alacritty | GPU-accelerated terminal |
+| **Launcher** | fuzzel | App launcher / menu |
+| **Bar** | waybar | Highly customizable status bar |
+| **Notification** | mako | Notification daemon |
+| **Lock** | swaylock | Screen locking tool |
+| **Wallpaper** | swaybg | Wallpaper setter (required for random wallpaper) |
 | **Audio** | wireplumber | Volume control (wpctl) |
 | | playerctl | Media playback control |
 | | pavucontrol | Audio control panel |
@@ -54,6 +61,7 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako \
 |---------|-------------|
 | chromium | Web browser (Mod+Shift+Enter to launch) |
 | gaur | TUI package manager |
+| lowfi | Terminal music player (AUR) |
 
 ## 🚀 Installation
 

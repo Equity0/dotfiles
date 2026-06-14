@@ -24,7 +24,7 @@
 ### Arch Linux
 
 ```bash
-sudo pacman -S niri alacritty fuzzel waybar swaylock mako \
+sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
     wireplumber brightnessctl playerctl libnotify glib2 \
     pavucontrol blueman network-manager-applet btop nautilus \
     ttf-jetbrains-mono-nerd polkit-gnome
@@ -34,6 +34,13 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako \
 
 | 分类 | 包名 | 用途 |
 |------|------|------|
+| **合成器** | niri | Wayland 平铺式合成器 |
+| **终端** | alacritty | GPU 加速终端 |
+| **启动器** | fuzzel | 应用启动器/菜单 |
+| **状态栏** | waybar | 高度可定制状态栏 |
+| **通知** | mako | 通知守护进程 |
+| **锁屏** | swaylock | 屏幕锁定工具 |
+| **壁纸** | swaybg | 壁纸设置（随机壁纸必需） |
 | **音频** | wireplumber | 音量控制 (wpctl) |
 | | playerctl | 媒体播放控制 |
 | | pavucontrol | 音频控制面板 |
@@ -54,6 +61,7 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako \
 |------|------|
 | chromium | 浏览器 (Mod+Shift+Enter 启动) |
 | gaur | TUI 包管理器 |
+| lowfi | 终端音乐播放器 (AUR) |
 
 ## 🚀 安装使用
 
