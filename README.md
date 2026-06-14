@@ -62,6 +62,7 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
 | chromium | 浏览器 (Mod+Shift+Enter 启动) |
 | gaur | TUI 包管理器 |
 | lowfi | 终端音乐播放器 (AUR) |
+| mimocode | AI 编程助手 (npm) |
 
 ## 🚀 安装使用
 

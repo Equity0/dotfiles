@@ -62,6 +62,7 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
 | chromium | Web browser (Mod+Shift+Enter to launch) |
 | gaur | TUI package manager |
 | lowfi | Terminal music player (AUR) |
+| mimocode | AI coding assistant (npm) |
 
 ## 🚀 Installation
 
