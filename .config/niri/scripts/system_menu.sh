@@ -5,10 +5,11 @@ STUDY_SCRIPT="$HOME/.config/niri/scripts/wokspc2-obsid-pdf.sh"
 THEME_SCRIPT="$HOME/.config/fuzzel/scripts/switch_theme.sh"
 POWER_SCRIPT="$HOME/.config/fuzzel/scripts/powermenu.sh"
 LOWFI_SCRIPT="$HOME/.config/niri/scripts/lowfi-scratchpad.sh"
+SOFTWARE_SCRIPT="$HOME/.config/niri/scripts/software.sh"
 
 # 1. 定义菜单选项
 # 用 \n 分隔每个选项
-OPTIONS="STUDY\nGAUR\nLOFI\nMIMO\nTHEME\nPOWER"
+OPTIONS="STUDY\nSOFTWARE\nLOFI\nMIMO\nTHEME\nPOWER"
 
 # 2. 通过 fuzzel 展现菜单
 CHOICE=$(echo -e "$OPTIONS" | fuzzel -d --width="20" --lines="6")
@@ -24,9 +25,8 @@ case "$CHOICE" in
   # 在 alacritty 中启动 gaur TUI 包管理器
   bash "$STUDY_SCRIPT" &
   ;;
-*"GAUR"*)
-  # 在 alacritty 中启动 gaur TUI 包管理器
-  alacritty --class "gaur" -e gaur &
+*"SOFTWARE"*)
+  bash "$SOFTWARE_SCRIPT" &
   ;;
 *"LOFI"*)
   bash "$LOWFI_SCRIPT" &
