@@ -471,7 +471,7 @@ window-rule {
 // lowfi: floating, small, semi-transparent
 // lowfi: 浮动、小窗口、半透明
 window-rule {
-    match app-id="Alacritty" title="^lowfi$"
+    match app-id="Alacritty" title="^lofi-player$"
     open-floating true
     default-window-height { fixed 130; }
     default-column-width { fixed 280; }

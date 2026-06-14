@@ -4,13 +4,14 @@
 STUDY_SCRIPT="$HOME/.config/niri/scripts/wokspc2-obsid-pdf.sh"
 THEME_SCRIPT="$HOME/.config/fuzzel/scripts/switch_theme.sh"
 POWER_SCRIPT="$HOME/.config/fuzzel/scripts/powermenu.sh"
+LOWFI_SCRIPT="$HOME/.config/niri/scripts/lowfi-scratchpad.sh"
 
 # 1. 定义菜单选项
 # 用 \n 分隔每个选项
-OPTIONS="STUDY\nGAUR\nTHEME\nPOWER"
+OPTIONS="STUDY\nGAUR\nLOFI\nTHEME\nPOWER"
 
 # 2. 通过 fuzzel 展现菜单
-CHOICE=$(echo -e "$OPTIONS" | fuzzel -d --width="20" --lines="4")
+CHOICE=$(echo -e "$OPTIONS" | fuzzel -d --width="20" --lines="5")
 
 # 如果用户按了 Esc 或没有选择，则退出
 if [ -z "$CHOICE" ]; then
@@ -26,6 +27,9 @@ case "$CHOICE" in
 *"GAUR"*)
   # 在 alacritty 中启动 gaur TUI 包管理器
   alacritty --class "gaur" -e gaur &
+  ;;
+*"LOFI"*)
+  bash "$LOWFI_SCRIPT" &
   ;;
 *"THEME"*)
   # 异步调用你的主题切换脚本
