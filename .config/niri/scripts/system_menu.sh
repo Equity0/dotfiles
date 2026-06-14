@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # 定义你之前写好的主题切换脚本路径（请根据你的实际路径修改）
-STUDY_SCRIPT="$HOME/open-workspace2.sh"
+STUDY_SCRIPT="$HOME/.config/niri/scripts/wokspc2-obsid-pdf.sh"
 THEME_SCRIPT="$HOME/.config/fuzzel/scripts/switch_theme.sh"
 POWER_SCRIPT="$HOME/.config/fuzzel/scripts/powermenu.sh"
 
