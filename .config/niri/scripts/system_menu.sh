@@ -8,10 +8,10 @@ LOWFI_SCRIPT="$HOME/.config/niri/scripts/lowfi-scratchpad.sh"
 
 # 1. 定义菜单选项
 # 用 \n 分隔每个选项
-OPTIONS="STUDY\nGAUR\nLOFI\nTHEME\nPOWER"
+OPTIONS="STUDY\nGAUR\nLOFI\nMIMO\nTHEME\nPOWER"
 
 # 2. 通过 fuzzel 展现菜单
-CHOICE=$(echo -e "$OPTIONS" | fuzzel -d --width="20" --lines="5")
+CHOICE=$(echo -e "$OPTIONS" | fuzzel -d --width="20" --lines="6")
 
 # 如果用户按了 Esc 或没有选择，则退出
 if [ -z "$CHOICE" ]; then
@@ -30,6 +30,13 @@ case "$CHOICE" in
   ;;
 *"LOFI"*)
   bash "$LOWFI_SCRIPT" &
+  ;;
+*"MIMO"*)
+  if [ -f "$HOME/.mimocode/bin/mimo" ]; then
+    alacritty --title mimo -e "$HOME/.mimocode/bin/mimo" &
+  else
+    xdg-open "https://mimo.xiaomi.com/coder" &
+  fi
   ;;
 *"THEME"*)
   # 异步调用你的主题切换脚本
