@@ -386,6 +386,7 @@ spawn-at-startup "waybar"
 spawn-sh-at-startup "bash -c ~/.config/niri/scripts/rand-bg.sh"
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "niriusd"
+spawn-at-startup "swayidle" "-w" "timeout" "300" "swaylock -f" "timeout" "600" "niri msg action power-off-monitors" "before-sleep" "swaylock -f"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // 要运行 shell 命令（带变量、管道等），使用 spawn-sh-at-startup:
