@@ -27,7 +27,7 @@ English | [中文](./README.md)
 sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
     wireplumber brightnessctl playerctl libnotify glib2 \
     pavucontrol blueman network-manager-applet btop nautilus \
-    ttf-jetbrains-mono-nerd polkit-gnome
+    ttf-jetbrains-mono-nerd polkit-gnome seahorse gnome-keyring
 ```
 
 ### Dependencies Detail
@@ -54,6 +54,8 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
 | | glib2 | Theme switching (gsettings) |
 | **Font** | ttf-jetbrains-mono-nerd | Nerd Font with icons |
 | **Auth** | polkit-gnome | Authentication agent |
+| | gnome-keyring | Keyring management daemon |
+| | seahorse | Keyring management GUI |
 
 ### Optional Dependencies
 

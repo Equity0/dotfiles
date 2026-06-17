@@ -27,7 +27,7 @@
 sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
     wireplumber brightnessctl playerctl libnotify glib2 \
     pavucontrol blueman network-manager-applet btop nautilus \
-    ttf-jetbrains-mono-nerd polkit-gnome
+    ttf-jetbrains-mono-nerd polkit-gnome seahorse gnome-keyring
 ```
 
 ### 依赖说明
@@ -54,6 +54,8 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
 | | glib2 | 主题切换 (gsettings) |
 | **字体** | ttf-jetbrains-mono-nerd | Nerd Font 图标字体 |
 | **认证** | polkit-gnome | 权限认证代理 |
+| | gnome-keyring | 密钥管理守护进程 |
+| | seahorse | 密钥管理图形界面 |
 
 ### 可选依赖
 
