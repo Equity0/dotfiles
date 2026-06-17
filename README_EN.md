@@ -63,6 +63,8 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
 |---------|-------------|
 | chromium | Web browser (Mod+Shift+Enter to launch) |
 | brave-origin | Web browser (AUR) |
+| gvfs | Nautilus WebDAV support |
+| gvfs-dnssd | Nautilus network discovery/WebDAV |
 | gaur | TUI package manager (AUR) |
 | lowfi | Terminal music player (AUR) |
 | mimocode | AI coding assistant (AUR) |
