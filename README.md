@@ -68,6 +68,7 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
 | gaur | TUI 包管理器 (AUR) |
 | lowfi | 终端音乐播放器 (AUR) |
 | mimocode | AI 编程助手 (AUR) |
+| [dockur/windows](https://github.com/dockur/windows) | 通过 Docker 运行 Windows |
 
 ## 🚀 安装使用
 
