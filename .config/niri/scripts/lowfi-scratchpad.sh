@@ -11,7 +11,7 @@ if ! command -v lowfi &>/dev/null; then
     exit 0
 fi
 
-alacritty --title lofi-player -e lowfi -w 1 &
+alacritty --title lofi-player -e lowfi -c -w 1 &
 for i in $(seq 1 30); do
     sleep 0.2
     if niri msg --json windows | grep -q '"lofi-player"'; then

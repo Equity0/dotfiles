@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if ! command -v playerctl &>/dev/null; then
+    notify-send -u critical "缺少 playerctl" "正在安装..."
+    alacritty --title playerctl-install -e bash -c "sudo pacman -S playerctl && echo '安装完成，按任意键退出...' && read"
+fi
+
 # 获取当前播放音乐信息的函数
 get_media_info() {
     # 获取播放状态 (Playing / Paused)

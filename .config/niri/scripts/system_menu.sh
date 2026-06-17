@@ -9,10 +9,10 @@ SOFTWARE_SCRIPT="$HOME/.config/niri/scripts/software.sh"
 
 # 1. 定义菜单选项
 # 用 \n 分隔每个选项
-OPTIONS="STUDY\nSOFTWARE\nLOFI\nMIMO\nTHEME\nPOWER"
+OPTIONS="STUDY\nSOFTWARE\nLOFI\nMIMO\nTHEME\nBTOP\nPOWER"
 
 # 2. 通过 fuzzel 展现菜单
-CHOICE=$(echo -e "$OPTIONS" | fuzzel -d --width="20" --lines="6")
+CHOICE=$(echo -e "$OPTIONS" | fuzzel -d --width="20" --lines="7")
 
 # 如果用户按了 Esc 或没有选择，则退出
 if [ -z "$CHOICE" ]; then
@@ -22,18 +22,18 @@ fi
 # 3. 根据选择执行对应的操作
 case "$CHOICE" in
 *"STUDY"*)
-  # 在 alacritty 中启动 gaur TUI 包管理器
   bash "$STUDY_SCRIPT" &
   ;;
 *"SOFTWARE"*)
+  # 在 alacritty 中启动 gaur TUI 包管理器
   bash "$SOFTWARE_SCRIPT" &
   ;;
 *"LOFI"*)
   bash "$LOWFI_SCRIPT" &
   ;;
 *"MIMO"*)
-  if [ -f "$HOME/.mimocode/bin/mimo" ]; then
-    alacritty --title mimo -e "$HOME/.mimocode/bin/mimo" &
+  if command -v mimo &>/dev/null; then
+    alacritty --title mimo -e mimo &
   else
     xdg-open "https://mimo.xiaomi.com/coder" &
   fi
@@ -41,6 +41,10 @@ case "$CHOICE" in
 *"THEME"*)
   # 异步调用你的主题切换脚本
   bash "$THEME_SCRIPT" &
+  ;;
+*"BTOP"*)
+  # 使用 systemctl 重启
+  alacritty --title btop -e btop &
   ;;
 *"POWER"*)
   # 使用 systemctl 重启
