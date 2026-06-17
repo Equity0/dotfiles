@@ -43,13 +43,13 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
 | **Wallpaper** | swaybg | Wallpaper setter (required for random wallpaper) |
 | **Audio** | wireplumber | Volume control (wpctl) |
 | | playerctl | Media playback control |
-| | pavucontrol | Audio control panel |
+| | pavucontrol | Audio control panel (right-click volume/mic icon) |
 | **Display** | brightnessctl | Brightness control |
 | **Notification** | libnotify | Send notifications (notify-send) |
-| **Network** | network-manager-applet | Network management |
+| **Network** | network-manager-applet | Network management (right-click network icon) |
 | | rfkill | WiFi/Bluetooth toggle |
-| **Bluetooth** | blueman | Bluetooth management |
-| **System** | btop | System monitor |
+| **Bluetooth** | blueman | Bluetooth management (right-click bluetooth icon) |
+| **System** | btop | System monitor (left-click CPU icon or Mod+Esc system menu) |
 | | nautilus | File manager |
 | | glib2 | Theme switching (gsettings) |
 | **Font** | ttf-jetbrains-mono-nerd | Nerd Font with icons |

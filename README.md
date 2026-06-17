@@ -43,13 +43,13 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
 | **壁纸** | swaybg | 壁纸设置（随机壁纸必需） |
 | **音频** | wireplumber | 音量控制 (wpctl) |
 | | playerctl | 媒体播放控制 |
-| | pavucontrol | 音频控制面板 |
+| | pavucontrol | 音频控制面板（右键音量或麦克风图标打开） |
 | **显示** | brightnessctl | 亮度控制 |
 | **通知** | libnotify | 发送通知 (notify-send) |
-| **网络** | network-manager-applet | 网络管理 |
+| **网络** | network-manager-applet | 网络管理（右键网络图标打开） |
 | | rfkill | WiFi/蓝牙开关 |
-| **蓝牙** | blueman | 蓝牙管理 |
-| **系统** | btop | 系统监控 |
+| **蓝牙** | blueman | 蓝牙管理（右键蓝牙图标打开） |
+| **系统** | btop | 系统监控（左键 CPU 图标或 Mod+Esc 系统菜单打开） |
 | | nautilus | 文件管理器 |
 | | glib2 | 主题切换 (gsettings) |
 | **字体** | ttf-jetbrains-mono-nerd | Nerd Font 图标字体 |
