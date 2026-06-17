@@ -62,9 +62,10 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
 | 包名 | 说明 |
 |------|------|
 | chromium | 浏览器 (Mod+Shift+Enter 启动) |
-| gaur | TUI 包管理器 |
+| brave-origin | 浏览器 (AUR) |
+| gaur | TUI 包管理器 (AUR) |
 | lowfi | 终端音乐播放器 (AUR) |
-| mimocode | AI 编程助手 (npm) |
+| mimocode | AI 编程助手 (AUR) |
 
 ## 🚀 安装使用
 

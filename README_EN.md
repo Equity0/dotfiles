@@ -62,9 +62,10 @@ sudo pacman -S niri alacritty fuzzel waybar swaylock mako swaybg \
 | Package | Description |
 |---------|-------------|
 | chromium | Web browser (Mod+Shift+Enter to launch) |
-| gaur | TUI package manager |
+| brave-origin | Web browser (AUR) |
+| gaur | TUI package manager (AUR) |
 | lowfi | Terminal music player (AUR) |
-| mimocode | AI coding assistant (npm) |
+| mimocode | AI coding assistant (AUR) |
 
 ## 🚀 Installation
 
