@@ -6,13 +6,14 @@ THEME_SCRIPT="$HOME/.config/fuzzel/scripts/switch_theme.sh"
 POWER_SCRIPT="$HOME/.config/fuzzel/scripts/powermenu.sh"
 LOWFI_SCRIPT="$HOME/.config/niri/scripts/lowfi-scratchpad.sh"
 SOFTWARE_SCRIPT="$HOME/.config/niri/scripts/software.sh"
+RAND_BG_SCRIPT="$HOME/.config/niri/scripts/rand-bg.sh"
 
 # 1. 定义菜单选项
 # 用 \n 分隔每个选项
-OPTIONS="STUDY\nSOFTWARE\nLOFI\nMIMO\nTHEME\nBTOP\nPOWER"
+OPTIONS="STUDY\nSOFTWARE\nLOFI\nMIMO\nWALLPAPERS\nTHEME\nBTOP\nPOWER"
 
 # 2. 通过 fuzzel 展现菜单
-CHOICE=$(echo -e "$OPTIONS" | fuzzel -d --width="20" --lines="7")
+CHOICE=$(echo -e "$OPTIONS" | fuzzel -d --width="20" --lines="8")
 
 # 如果用户按了 Esc 或没有选择，则退出
 if [ -z "$CHOICE" ]; then
@@ -37,6 +38,25 @@ case "$CHOICE" in
     alacritty --title mimo --working-directory "$HOME/Projects" -e mimo &
   else
     xdg-open "https://mimo.xiaomi.com/coder" &
+  fi
+  ;;
+*"WALLPAPERS"*)
+  WP_CHOICE=$(echo -e "Natural\nComic" | fuzzel -d --width="15" --lines="2")
+  if [ -n "$WP_CHOICE" ]; then
+    case "$WP_CHOICE" in
+    *"Natural"*)
+      WP_DIR="$HOME/Pictures/WallpapersNatural"
+      ;;
+    *"Comic"*)
+      WP_DIR="$HOME/Pictures/WallpapersComic"
+      ;;
+    *)
+      exit 0
+      ;;
+    esac
+    pkill -f "rand-bg.sh" 2>/dev/null
+    pkill swaybg 2>/dev/null
+    bash "$RAND_BG_SCRIPT" "$WP_DIR" &
   fi
   ;;
 *"THEME"*)

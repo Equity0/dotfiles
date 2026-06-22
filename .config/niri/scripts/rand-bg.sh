@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# 1. 填入你的壁纸文件夹路径
-WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
+# 1. 壁纸文件夹路径（支持命令行参数，否则使用默认值）
+WALLPAPER_DIR="${1:-$HOME/Pictures/WallpapersNatural}"
 
 # 2. 检查工具是否存在
 if ! command -v swaybg &> /dev/null || ! command -v shuf &> /dev/null; then
