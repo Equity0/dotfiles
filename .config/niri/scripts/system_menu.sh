@@ -34,7 +34,7 @@ case "$CHOICE" in
 *"MIMO"*)
   mkdir -p "$HOME/Projects"
   if command -v mimo &>/dev/null; then
-    alacritty --title mimo --directory "$HOME/Projects" -e mimo &
+    alacritty --title mimo --working-directory "$HOME/Projects" -e mimo &
   else
     xdg-open "https://mimo.xiaomi.com/coder" &
   fi
