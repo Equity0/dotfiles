@@ -32,8 +32,9 @@ case "$CHOICE" in
   bash "$LOWFI_SCRIPT" &
   ;;
 *"MIMO"*)
+  mkdir -p "$HOME/Projects"
   if command -v mimo &>/dev/null; then
-    alacritty --title mimo -e mimo &
+    alacritty --title mimo --directory "$HOME/Projects" -e mimo &
   else
     xdg-open "https://mimo.xiaomi.com/coder" &
   fi
